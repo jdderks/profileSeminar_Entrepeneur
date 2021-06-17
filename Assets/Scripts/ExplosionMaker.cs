@@ -7,10 +7,18 @@ public class ExplosionMaker : MonoBehaviour
     public float radius = 5.0F;
     public float power = 10.0F;
 
+    [SerializeField]
+    private int totalExplosionAmount = 0;
+
+    [SerializeField]
+    private int explosionsLeft = 10;
+
     Vector3 worldPosition;
     [SerializeField] Camera cam;
 
     [SerializeField] private GameObject explosionPrefab;
+
+    public int ExplosionsLeft { get => explosionsLeft; set => explosionsLeft = value; }
 
     void Start()
     {
@@ -25,7 +33,11 @@ public class ExplosionMaker : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Explode(worldPosition);
+            if (explosionsLeft > 0)
+            {
+                Explode(worldPosition);
+                explosionsLeft--;
+            }
         }
     }
 
@@ -45,6 +57,11 @@ public class ExplosionMaker : MonoBehaviour
             }
         }
 
+    }
+
+    public void AddExplosions(int amount)
+    {
+        explosionsLeft += amount;
     }
 
     
