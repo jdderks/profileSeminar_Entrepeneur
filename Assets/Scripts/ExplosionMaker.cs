@@ -23,7 +23,7 @@ public class ExplosionMaker : MonoBehaviour
         mousePos.z = cam.nearClipPlane;
         worldPosition = cam.ScreenToWorldPoint(mousePos);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Explode(worldPosition);
         }
@@ -32,7 +32,6 @@ public class ExplosionMaker : MonoBehaviour
 
     public void Explode(Vector2 point)
     {
-        Debug.Log("Explosion");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(point, radius);
 
         for (int i = 0; i < colliders.Length; i++)
