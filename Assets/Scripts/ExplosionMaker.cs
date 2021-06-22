@@ -11,6 +11,9 @@ public class ExplosionMaker : MonoBehaviour
     private int totalExplosionAmount = 0;
 
     [SerializeField]
+    bool useLimitedAmountofBombs = false;
+
+    [SerializeField]
     private int explosionsLeft = 10;
 
     Vector3 worldPosition;
@@ -33,10 +36,9 @@ public class ExplosionMaker : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (explosionsLeft > 0)
+            if (!useLimitedAmountofBombs)
             {
                 Explode(worldPosition);
-                explosionsLeft--;
             }
         }
     }
