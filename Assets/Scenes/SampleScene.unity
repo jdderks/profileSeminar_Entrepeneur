@@ -2014,6 +2014,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: TileMap 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4682896667684288775, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
+      propertyPath: m_TileAssetArray.Array.data[17].m_Data
+      value: 
+      objectReference: {fileID: 11400000, guid: c804cf357779fcd40aa999b642ec6d46, type: 2}
+    - target: {fileID: 4682896667684288775, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[17].m_Data
+      value: 
+      objectReference: {fileID: 21300000, guid: f64cce5ffbea7234fbe5e6e1fad1ebad, type: 3}
+    - target: {fileID: 4682896667684288775, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
+      propertyPath: m_TileAssetArray.Array.data[6].m_RefCount
+      value: 15403
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896667684288775, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
+      propertyPath: m_TileAssetArray.Array.data[17].m_RefCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896667684288775, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[6].m_RefCount
+      value: 15403
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896667684288775, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[17].m_RefCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896667684288775, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
+      propertyPath: m_Tiles.Array.data[9885].second.m_TileIndex
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896667684288775, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
+      propertyPath: m_Tiles.Array.data[9885].second.m_TileSpriteIndex
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 033586a2b06d2d1468fcd5148e3df318, type: 3}
 --- !u!4 &2014535429 stripped
